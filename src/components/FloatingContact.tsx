@@ -9,9 +9,9 @@ const FloatingContact = () => {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
       <a href={`tel:+${phoneNumber}`}>
         <Button
-          variant="urgent"
+          variant="glow"
           size="icon"
-          className="w-14 h-14 rounded-full shadow-lg"
+          className="w-14 h-14 shadow-xl"
         >
           <Phone className="w-6 h-6" />
         </Button>
@@ -25,7 +25,7 @@ const FloatingContact = () => {
         <Button
           variant="whatsapp"
           size="icon"
-          className="w-14 h-14 rounded-full shadow-lg animate-ring-pulse"
+          className="w-14 h-14 shadow-xl animate-ring-pulse"
         >
           <MessageCircle className="w-6 h-6" />
         </Button>

@@ -2,62 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @layer base {
   :root {
-    --background: 220 20% 8%;
-    --foreground: 45 100% 96%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 220 18% 12%;
-    --card-foreground: 45 100% 96%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 220 18% 12%;
-    --popover-foreground: 45 100% 96%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 220 20% 8%;
+    --primary: 45 90% 55%;
+    --primary-foreground: 0 0% 5%;
 
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 45 100% 96%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 60%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 25 100% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 45 100% 50%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 45 90% 55%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Custom tokens */
-    --gold: 45 100% 50%;
-    --gold-light: 45 100% 70%;
-    --gold-dark: 45 100% 35%;
-    --urgent: 0 85% 55%;
-    --urgent-glow: 0 100% 60%;
     --success: 142 70% 45%;
-
-    /* Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(45 100% 50%), hsl(35 100% 45%));
-    --gradient-dark: linear-gradient(180deg, hsl(220 20% 8%), hsl(220 25% 5%));
-    --gradient-card: linear-gradient(145deg, hsl(220 18% 14%), hsl(220 18% 10%));
-
-    /* Shadows */
-    --shadow-gold: 0 0 30px hsl(45 100% 50% / 0.3);
-    --shadow-urgent: 0 0 20px hsl(0 85% 55% / 0.4);
-    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.3);
-  }
-
-  .dark {
-    --background: 220 20% 8%;
-    --foreground: 45 100% 96%;
   }
 }
 
@@ -67,123 +46,34 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    background: var(--gradient-dark);
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
   }
 }
 
-@layer utilities {
-  .text-gradient-gold {
-    background: var(--gradient-gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .glow-gold {
-    box-shadow: var(--shadow-gold);
-  }
-
-  .glow-urgent {
-    box-shadow: var(--shadow-urgent);
-  }
-}
-
-/* Custom Animations */
-@keyframes pulse-urgent {
+@keyframes pulse-slow {
   0%, 100% {
     opacity: 1;
-    transform: scale(1);
   }
   50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes key-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-15deg);
-  }
-  75% {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes unlock {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
+    opacity: 0.7;
   }
 }
 
 @keyframes ring-pulse {
   0% {
-    box-shadow: 0 0 0 0 hsl(var(--success) / 0.7);
+    box-shadow: 0 0 0 0 hsl(var(--success) / 0.6);
   }
   70% {
-    box-shadow: 0 0 0 15px hsl(var(--success) / 0);
+    box-shadow: 0 0 0 12px hsl(var(--success) / 0);
   }
   100% {
     box-shadow: 0 0 0 0 hsl(var(--success) / 0);
   }
 }
 
-.animate-pulse-urgent {
-  animation: pulse-urgent 2s ease-in-out infinite;
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.animate-key-rotate {
-  animation: key-rotate 2s ease-in-out infinite;
-}
-
-.animate-unlock {
-  animation: unlock 1.5s ease-in-out infinite;
-}
-
-.animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    hsl(var(--gold) / 0) 0%,
-    hsl(var(--gold) / 0.3) 50%,
-    hsl(var(--gold) / 0) 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 3s linear infinite;
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
 }
 
 .animate-ring-pulse {

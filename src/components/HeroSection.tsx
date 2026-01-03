@@ -1,12 +1,46 @@
-import { Phone, Clock, Key, Shield, Zap } from "lucide-react";
+import { Phone, Clock, Key, Shield, Zap, MapPin, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-radial" />
       <div className="absolute inset-0 bg-gradient-glow" />
+      <div className="absolute inset-0 bg-grid" />
+
+      {/* Header strip */}
+      <div className="absolute top-0 left-0 right-0 px-4 sm:px-6 md:px-8 py-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 border border-primary/30">
+              <Clock className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Chegamos em minutos</p>
+              <p className="text-sm font-semibold text-foreground">Plantão 24h em toda a região</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up-delay-1">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 border border-primary/30">
+              <MapPin className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Atendimento Local</p>
+              <p className="text-sm font-semibold text-foreground">Especialistas na zona oeste e centro</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up-delay-2">
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 border border-primary/30">
+              <Shield className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="text-xs text-muted-foreground">Serviço Garantido</p>
+              <p className="text-sm font-semibold text-foreground">Pagamento só quando o problema resolver</p>
+            </div>
+          </div>
+        </div>
+      </div>
       
       {/* Floating Keys Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -17,7 +51,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-3xl mx-auto text-center">
+      <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
         {/* 24h Badge */}
         <div className="animate-fade-up inline-flex items-center gap-3 bg-card/80 backdrop-blur-sm border border-primary/30 rounded-full px-5 py-2.5 mb-10">
           <span className="relative flex h-2.5 w-2.5">
@@ -38,20 +72,28 @@ const HeroSection = () => {
         </div>
 
         {/* Title */}
-        <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight">
-          <span className="text-gradient">Chaveiro MR</span>
-        </h1>
+        <div className="space-y-4 animate-fade-up-delay-1 px-2">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+            <span className="text-gradient">Chaveiro MR</span> 24 Horas
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+            Equipe de chaveiros profissionais com deslocamento imediato, equipamentos modernos e atendimento acolhedor para você voltar à rotina sem dor de cabeça.
+          </p>
+        </div>
 
         {/* Subtitle */}
-        <p className="animate-fade-up-delay-2 text-xl md:text-2xl text-foreground/80 mb-3 font-medium">
-          Ficou trancado? Resolvemos em minutos.
-        </p>
-        <p className="animate-fade-up-delay-2 text-muted-foreground mb-10 text-lg">
-          Atendimento rápido e profissional • 7 dias por semana
-        </p>
+        <div className="animate-fade-up-delay-2 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+          <div className="flex items-center gap-3 text-foreground font-semibold text-lg">
+            <CheckCircle2 className="w-5 h-5 text-primary" /> Portas, cofres e veículos
+          </div>
+          <div className="hidden md:block w-px h-6 bg-border" />
+          <div className="flex items-center gap-3 text-muted-foreground">
+            <Shield className="w-5 h-5 text-primary" /> Serviço com garantia e nota fiscal
+          </div>
+        </div>
 
         {/* CTA Buttons */}
-        <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
           <a href="tel:+5511999999999">
             <Button variant="glow" size="xl" className="gap-3 min-w-[220px]">
               <Phone className="w-5 h-5" />

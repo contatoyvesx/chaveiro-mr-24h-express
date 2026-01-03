@@ -6,12 +6,12 @@ const FloatingContact = () => {
   const whatsappMessage = encodeURIComponent("Olá! Preciso de um chaveiro urgente.");
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
-      <a href={`tel:+${phoneNumber}`}>
+    <div className="fixed inset-x-0 bottom-4 sm:bottom-6 sm:inset-x-auto sm:right-6 z-50 flex justify-center sm:justify-end sm:flex-col gap-3 px-4">
+      <a href={`tel:+${phoneNumber}`} className="flex justify-center">
         <Button
           variant="glow"
           size="icon"
-          className="w-14 h-14 shadow-xl"
+          className="w-12 h-12 sm:w-14 sm:h-14 shadow-xl"
         >
           <Phone className="w-6 h-6" />
         </Button>
@@ -25,7 +25,7 @@ const FloatingContact = () => {
         <Button
           variant="whatsapp"
           size="icon"
-          className="w-14 h-14 shadow-xl animate-ring-pulse"
+          className="w-12 h-12 sm:w-14 sm:h-14 shadow-xl animate-ring-pulse"
         >
           <MessageCircle className="w-6 h-6" />
         </Button>

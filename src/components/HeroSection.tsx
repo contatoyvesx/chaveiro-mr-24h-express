@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-start md:items-center justify-center px-4 sm:px-6 md:px-8 pt-12 sm:pt-16 md:pt-32 pb-16 md:pb-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-radial" />
       <div className="absolute inset-0 bg-gradient-glow" />
       <div className="absolute inset-0 bg-grid" />
 
       {/* Header strip */}
-      <div className="absolute top-0 left-0 right-0 px-4 sm:px-6 md:px-8 py-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="relative md:absolute md:top-0 md:left-0 md:right-0 px-4 sm:px-6 md:px-8 py-4 mb-8 md:mb-0 z-10 hidden md:block">
+        <div className="max-w-5xl mx-auto grid grid-cols-3 gap-3">
           <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 border border-primary/30">
               <Clock className="w-5 h-5 text-primary" />

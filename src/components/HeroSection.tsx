@@ -65,14 +65,12 @@ const HeroSection = () => {
         </div>
 
         {/* Logo Icon */}
-        <div className="animate-fade-up-delay-1 mb-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 glow-sm">
-            <img
-              src="/canivete.png"
-              alt="Canivete"
-              className="w-12 h-12 object-contain"
-            />
-          </div>
+        <div className="animate-fade-up-delay-1 mb-6 flex justify-center">
+          <img
+            src="/canivete.png"
+            alt="Canivete"
+            className="w-16 h-16 object-contain"
+          />
         </div>
 
         {/* Title */}
@@ -98,7 +96,7 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-          <a href="tel:+5511999999999">
+          <a href="tel:+5511970211708">
             <Button variant="glow" size="xl" className="gap-3 min-w-[220px]">
               <Phone className="w-5 h-5" />
               Ligar Agora
@@ -118,11 +116,11 @@ const HeroSection = () => {
 
         {/* Phone Number */}
         <a 
-          href="tel:+5511999999999" 
+          href="tel:+5511970211708" 
           className="animate-fade-up-delay-3 inline-flex items-center gap-3 text-3xl md:text-4xl font-bold text-foreground hover:text-primary transition-colors duration-300"
         >
           <Phone className="w-7 h-7" />
-          (11) 99999-9999
+          +55 11 97021-1708
         </a>
 
         {/* Quick Trust Indicators */}

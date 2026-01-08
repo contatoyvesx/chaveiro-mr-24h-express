@@ -63,7 +63,7 @@ const HowItWorksSection = () => {
               Ligue e deixe o deslocamento conosco. Enquanto chegamos, orientamos sobre segurança e enviamos o status do atendimento.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="tel:+5511999999999">
+              <a href="tel:+5511970211708">
                 <Button variant="glow" size="lg" className="gap-2 w-full sm:w-auto">
                   Ligar agora
                 </Button>

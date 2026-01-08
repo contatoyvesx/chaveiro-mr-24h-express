@@ -65,10 +65,12 @@ const HeroSection = () => {
         </div>
 
         {/* Logo Icon */}
-        <div className="animate-fade-up-delay-1 mb-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 glow-sm">
-            <Key className="w-10 h-10 text-primary" />
-          </div>
+        <div className="animate-fade-up-delay-1 mb-6 flex justify-center">
+          <img
+            src="/canivete2.png"
+            alt="Canivete"
+            className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
+          />
         </div>
 
         {/* Title */}
@@ -94,18 +96,18 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-          <a href="tel:+5511999999999">
-            <Button variant="glow" size="xl" className="gap-3 min-w-[220px]">
+          <a href="tel:+5511970211708">
+            <Button variant="glow" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <Phone className="w-5 h-5" />
               Ligar Agora
             </Button>
           </a>
           <a
-            href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+            href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="xl" className="gap-3 min-w-[220px]">
+            <Button variant="outline" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <WhatsAppIcon className="w-5 h-5" />
               WhatsApp
             </Button>
@@ -114,11 +116,11 @@ const HeroSection = () => {
 
         {/* Phone Number */}
         <a 
-          href="tel:+5511999999999" 
+          href="tel:+5511970211708" 
           className="animate-fade-up-delay-3 inline-flex items-center gap-3 text-3xl md:text-4xl font-bold text-foreground hover:text-primary transition-colors duration-300"
         >
           <Phone className="w-7 h-7" />
-          (11) 99999-9999
+          +55 11 97021-1708
         </a>
 
         {/* Quick Trust Indicators */}

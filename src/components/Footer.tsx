@@ -15,7 +15,7 @@ const Footer = () => {
               Ligar agora
             </a>
             <a
-              href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+              href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition"

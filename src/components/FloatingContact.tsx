@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const FloatingContact = () => {
   const phoneNumber = "5511999999999";
+  const whatsappNumber = "5511970211708";
   const whatsappMessage = encodeURIComponent("Olá! Preciso de um chaveiro urgente.");
 
   return (
@@ -18,7 +19,7 @@ const FloatingContact = () => {
       </a>
 
       <a
-        href={`https://wa.me/${phoneNumber}?text=${whatsappMessage}`}
+        href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
       >

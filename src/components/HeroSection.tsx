@@ -67,7 +67,11 @@ const HeroSection = () => {
         {/* Logo Icon */}
         <div className="animate-fade-up-delay-1 mb-6">
           <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 glow-sm">
-            <Key className="w-10 h-10 text-primary" />
+            <img
+              src="/canivete.png"
+              alt="Canivete"
+              className="w-12 h-12 object-contain"
+            />
           </div>
         </div>
 
@@ -101,7 +105,7 @@ const HeroSection = () => {
             </Button>
           </a>
           <a
-            href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+            href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
             target="_blank"
             rel="noopener noreferrer"
           >

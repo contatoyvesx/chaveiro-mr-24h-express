@@ -65,14 +65,12 @@ const HeroSection = () => {
         </div>
 
         {/* Logo Icon */}
-        <div className="animate-fade-up-delay-1 mb-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 glow-sm">
-            <img
-              src="/canivete.png"
-              alt="Canivete"
-              className="w-16 h-16 object-contain"
-            />
-          </div>
+        <div className="animate-fade-up-delay-1 mb-6 flex justify-center">
+          <img
+            src="/canivete.png"
+            alt="Canivete"
+            className="w-16 h-16 object-contain"
+          />
         </div>
 
         {/* Title */}

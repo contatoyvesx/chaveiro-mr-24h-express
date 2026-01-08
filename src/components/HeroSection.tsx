@@ -3,15 +3,15 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-start md:items-center justify-center px-4 sm:px-6 md:px-8 pt-12 sm:pt-16 md:pt-32 pb-16 md:pb-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-radial" />
       <div className="absolute inset-0 bg-gradient-glow" />
       <div className="absolute inset-0 bg-grid" />
 
       {/* Header strip */}
-      <div className="absolute top-0 left-0 right-0 px-4 sm:px-6 md:px-8 py-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-3">
+      <div className="relative md:absolute md:top-0 md:left-0 md:right-0 px-4 sm:px-6 md:px-8 py-4 mb-8 md:mb-0 z-10 hidden md:block">
+        <div className="max-w-5xl mx-auto grid grid-cols-3 gap-3">
           <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 border border-primary/30">
               <Clock className="w-5 h-5 text-primary" />
@@ -65,10 +65,12 @@ const HeroSection = () => {
         </div>
 
         {/* Logo Icon */}
-        <div className="animate-fade-up-delay-1 mb-6">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 glow-sm">
-            <Key className="w-10 h-10 text-primary" />
-          </div>
+        <div className="animate-fade-up-delay-1 mb-6 flex justify-center">
+          <img
+            src="/canivete2.png"
+            alt="Canivete"
+            className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
+          />
         </div>
 
         {/* Title */}
@@ -94,18 +96,18 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-          <a href="tel:+5511999999999">
-            <Button variant="glow" size="xl" className="gap-3 min-w-[220px]">
+          <a href="tel:+5511970211708">
+            <Button variant="glow" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <Phone className="w-5 h-5" />
               Ligar Agora
             </Button>
           </a>
           <a
-            href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+            href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="xl" className="gap-3 min-w-[220px]">
+            <Button variant="outline" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <WhatsAppIcon className="w-5 h-5" />
               WhatsApp
             </Button>
@@ -114,11 +116,11 @@ const HeroSection = () => {
 
         {/* Phone Number */}
         <a 
-          href="tel:+5511999999999" 
+          href="tel:+5511970211708" 
           className="animate-fade-up-delay-3 inline-flex items-center gap-3 text-3xl md:text-4xl font-bold text-foreground hover:text-primary transition-colors duration-300"
         >
           <Phone className="w-7 h-7" />
-          (11) 99999-9999
+          +55 11 97021-1708
         </a>
 
         {/* Quick Trust Indicators */}

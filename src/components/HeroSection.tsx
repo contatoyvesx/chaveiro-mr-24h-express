@@ -69,7 +69,7 @@ const HeroSection = () => {
           <img
             src="/canivete2.png"
             alt="Canivete"
-            className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
+            className="w-36 h-36 sm:w-40 sm:h-40 md:w-44 md:h-44 object-contain"
           />
         </div>
 

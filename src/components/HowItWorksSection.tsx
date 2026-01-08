@@ -63,13 +63,13 @@ const HowItWorksSection = () => {
               Ligue e deixe o deslocamento conosco. Enquanto chegamos, orientamos sobre segurança e enviamos o status do atendimento.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="tel:+5511999999999">
+              <a href="tel:+5511970211708">
                 <Button variant="glow" size="lg" className="gap-2 w-full sm:w-auto">
                   Ligar agora
                 </Button>
               </a>
               <a
-                href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+                href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

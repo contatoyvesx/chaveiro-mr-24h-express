@@ -69,7 +69,7 @@ const HowItWorksSection = () => {
                 </Button>
               </a>
               <a
-                href="https://wa.me/5511999999999?text=Olá! Preciso de um chaveiro urgente."
+                href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

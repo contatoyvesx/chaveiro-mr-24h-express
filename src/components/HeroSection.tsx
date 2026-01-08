@@ -69,7 +69,7 @@ const HeroSection = () => {
           <img
             src="/canivete2.png"
             alt="Canivete"
-            className="w-36 h-36 object-contain"
+            className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 object-contain"
           />
         </div>
 
@@ -97,7 +97,7 @@ const HeroSection = () => {
         {/* CTA Buttons */}
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
           <a href="tel:+5511970211708">
-            <Button variant="glow" size="xl" className="gap-3 min-w-[220px]">
+            <Button variant="glow" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <Phone className="w-5 h-5" />
               Ligar Agora
             </Button>
@@ -107,7 +107,7 @@ const HeroSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="outline" size="xl" className="gap-3 min-w-[220px]">
+            <Button variant="outline" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <WhatsAppIcon className="w-5 h-5" />
               WhatsApp
             </Button>

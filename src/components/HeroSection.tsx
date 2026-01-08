@@ -67,9 +67,9 @@ const HeroSection = () => {
         {/* Logo Icon */}
         <div className="animate-fade-up-delay-1 mb-6 flex justify-center">
           <img
-            src="/canivete.png"
+            src="/canivete2.png"
             alt="Canivete"
-            className="w-16 h-16 object-contain"
+            className="w-24 h-24 object-contain"
           />
         </div>
 

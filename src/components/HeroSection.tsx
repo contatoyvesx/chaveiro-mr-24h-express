@@ -62,7 +62,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-3 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 font-semibold text-primary shadow-sm transition hover:bg-primary/10"
             >
               <img
-                src="/icone branco_fundo transparente.jpg"
+                src="/icone branco_fundo preto.jpg"
                 alt="Logo YvesX"
                 className="h-9 w-9 rounded-full border border-primary/20 bg-white object-contain p-1"
                 loading="lazy"

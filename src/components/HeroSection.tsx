@@ -52,6 +52,26 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
+        <div className="animate-fade-up flex flex-col items-center gap-2 text-muted-foreground text-sm">
+          <span className="text-primary text-xs uppercase tracking-[0.32em]">Em parceria com</span>
+          <div className="flex flex-col items-center gap-2 text-sm sm:flex-row sm:gap-3">
+            <a
+              href="https://yvesx.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 font-semibold text-primary shadow-sm transition hover:bg-primary/10"
+            >
+              <img
+                src="/icone branco_fundo transparente.jpg"
+                alt="Logo YvesX"
+                className="h-9 w-9 rounded-full border border-primary/20 bg-white object-contain p-1"
+                loading="lazy"
+              />
+              YvesX
+            </a>
+            <span className="text-muted-foreground/90">Responsável pela criação deste site.</span>
+          </div>
+        </div>
         {/* 24h Badge */}
         <div className="animate-fade-up inline-flex items-center gap-3 bg-card/80 backdrop-blur-sm border border-primary/30 rounded-full px-5 py-2.5 mb-10">
           <span className="relative flex h-2.5 w-2.5">

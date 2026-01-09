@@ -82,6 +82,24 @@ const Footer = () => {
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Chaveiro MR. Todos os direitos reservados.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground text-sm">
+            <span>Em parceria com</span>
+            <a
+              href="https://yvesx.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold"
+            >
+              <img
+                src="/icone branco_fundo transparente.jpg"
+                alt="Logo YvesX"
+                className="h-6 w-6 rounded-full border border-primary/20 bg-white object-contain p-0.5"
+                loading="lazy"
+              />
+              YvesX
+            </a>
+            <span>, responsável pela criação deste site.</span>
+          </div>
         </div>
       </div>
     </footer>

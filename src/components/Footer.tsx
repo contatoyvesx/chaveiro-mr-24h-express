@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border/50 text-center space-y-3">
+        <div className="pt-8 border-t border-border/50 text-center space-y-2">
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Chaveiro MR. Todos os direitos reservados.
           </p>

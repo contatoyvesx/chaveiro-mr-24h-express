@@ -16,7 +16,7 @@ const highlights = [
   {
     icon: MapPin,
     title: "Cobertura local",
-    value: "Zona Oeste e Centro",
+    value: "Zona Leste",
     desc: "Conhecemos cada bairro e os acessos para ganhar tempo no deslocamento."
   },
   {

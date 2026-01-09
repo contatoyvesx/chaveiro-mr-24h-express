@@ -27,7 +27,7 @@ const HeroSection = () => {
             </div>
             <div>
               <p className="text-xs text-muted-foreground">Atendimento Local</p>
-              <p className="text-sm font-semibold text-foreground">Especialistas na zona oeste e centro</p>
+              <p className="text-sm font-semibold text-foreground">Especialistas na zona leste</p>
             </div>
           </div>
           <div className="flex items-center gap-3 bg-card/70 backdrop-blur-sm border border-primary/20 rounded-xl px-4 py-3 animate-fade-up-delay-2">

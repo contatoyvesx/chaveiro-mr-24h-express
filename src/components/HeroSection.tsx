@@ -116,14 +116,14 @@ const HeroSection = () => {
 
         {/* CTA Buttons */}
         <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
-          <a href="tel:+5511970211708">
+          <a href="tel:+5511958870740">
             <Button variant="glow" size="xl" className="gap-3 w-full sm:min-w-[220px]">
               <Phone className="w-5 h-5" />
               Ligar Agora
             </Button>
           </a>
           <a
-            href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
+            href="https://wa.me/5511958870740?text=Olá! Preciso de um chaveiro urgente."
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -136,11 +136,11 @@ const HeroSection = () => {
 
         {/* Phone Number */}
         <a 
-          href="tel:+5511970211708" 
+          href="tel:+5511958870740" 
           className="animate-fade-up-delay-3 inline-flex items-center gap-3 text-3xl md:text-4xl font-bold text-foreground hover:text-primary transition-colors duration-300"
         >
           <Phone className="w-7 h-7" />
-          +55 11 97021-1708
+          +55 11 95887-0740
         </a>
 
         {/* Quick Trust Indicators */}

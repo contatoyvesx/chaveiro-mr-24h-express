@@ -2,8 +2,8 @@ import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FloatingContact = () => {
-  const phoneNumber = "5511970211708";
-  const whatsappNumber = "5511970211708";
+  const phoneNumber = "5511958870740";
+  const whatsappNumber = "5511958870740";
   const whatsappMessage = encodeURIComponent("Olá! Preciso de um chaveiro urgente.");
 
   return (

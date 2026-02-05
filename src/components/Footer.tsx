@@ -10,12 +10,12 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-foreground">Acionamos o chaveiro mais próximo imediatamente.</h3>
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="tel:+5511970211708" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg">
+            <a href="tel:+5511958870740" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg">
               <Phone className="w-4 h-4" />
               Ligar agora
             </a>
             <a
-              href="https://wa.me/5511970211708?text=Olá! Preciso de um chaveiro urgente."
+              href="https://wa.me/5511958870740?text=Olá! Preciso de um chaveiro urgente."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition"
@@ -49,11 +49,11 @@ const Footer = () => {
             <h3 className="font-bold text-foreground mb-4">Contato</h3>
             <div className="space-y-3">
               <a
-                href="tel:+5511970211708"
+                href="tel:+5511958870740"
                 className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors duration-300"
               >
                 <Phone className="w-4 h-4" />
-                <span>+55 11 97021-1708</span>
+                <span>+55 11 95887-0740</span>
               </a>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4" />
